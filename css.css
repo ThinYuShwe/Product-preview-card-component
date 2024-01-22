@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  box-sizing: border-box;
+}
+
+#outerdiv {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 48%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#innerdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#left {
+  box-sizing: border-box;
+}
+
+#left img {
+  max-width: 100%;
+  display: block;
+}
+
+#right {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 11px;
+  background-color: white;
+}
+
+#box {
+  border: 1px solid hsl(158, 36%, 37%);
+  background-color: hsl(158, 36%, 37%);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#one {
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+}
+
+#two {
+  line-height: 20px;
+  color: rgb(79, 79, 79);
+}
+
+#threeandfour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+#three {
+  color: hsl(158, 77%, 25%);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#four {
+  text-decoration: line-through;
+  color: rgb(85, 85, 85);
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 40px;
+  }
+
+  #outerdiv {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #innerdiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
